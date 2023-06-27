@@ -1,12 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap');
+
 
 $xlarge-text: 5.1vw;
 $large-text: 4vw;
 $medium-text: 3.3vw;
 $small-text: 1.7vw;
+$msmall-text: 1.3vw;
 $xsmall-text: 1vw;
 $button-text: 1.5vw;
 // font-size
+
+$bold: 700;
+$semibold: 600;
+$medium: 500;
+$regular: 400;
 
 $button-color: #EF83FF;
 $big-text-color: #060C55;
@@ -18,8 +28,32 @@ $box-gradient: linear-gradient(315deg, #EE9AB3 0.25%, #5961F9 100%);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
 }
 
-.img{
-    width: 100%;
+ul{
+    display: flex;
+    li{
+        padding: 2%;
+        list-style-type: none;
+        a{
+            color: $big-text-color;
+            font-size: $msmall-text;
+            font-weight: $medium;
+            text-decoration: none;
+        }
+    }
+}
+
+header{
+    nav{
+        display: flex;
+        padding: 0 10vw;
+        justify-content: space-between;
+        align-items: center;
+        .logo_menu,.lang_button{
+            display: flex;
+            align-items: center;
+        }
+    }
 }
