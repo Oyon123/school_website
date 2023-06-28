@@ -17,6 +17,7 @@ $bold: 700;
 $semibold: 600;
 $medium: 500;
 $regular: 400;
+//font-weight
 
 $button-color: #EF83FF;
 $big-text-color: #060C55;
@@ -51,7 +52,7 @@ header{
         padding: 0 5vw;
         justify-content: space-between;
         align-items: center;
-        .logo_menu,.lang_button{
+        .logo_menu,.lang_button,.lang{
             display: flex;
             align-items: center;
         }
