@@ -34,7 +34,7 @@ $box-gradient: linear-gradient(315deg, #EE9AB3 0.25%, #5961F9 100%);
 ul{
     display: flex;
     li{
-        padding: 2%;
+        padding: 15%;
         list-style-type: none;
         a{
             color: $big-text-color;
@@ -48,7 +48,7 @@ ul{
 header{
     nav{
         display: flex;
-        padding: 0 10vw;
+        padding: 0 5vw;
         justify-content: space-between;
         align-items: center;
         .logo_menu,.lang_button{
