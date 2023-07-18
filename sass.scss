@@ -25,6 +25,34 @@ $small-text-color: #4A4C6D;
 $box-gradient: linear-gradient(315deg, #EE9AB3 0.25%, #5961F9 100%);
 // colors
 
+@mixin customButton() {
+    /* Styles for the button */
+    width: 237px;
+    height: 71px;
+    padding: 14px 19px;
+    background-color: $button-color;
+    color: #ffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 9px;
+    display: inline-block;
+    font-size: $button-text;
+    font-weight: $semibold;
+    border: 1px solid transparent;
+    cursor: pointer;
+    @content;
+    transition: background-color 0.3ms, border 0.3s;
+
+
+
+    /* Styles for the button on hover */
+    &:hover {
+        background-color: transparent;
+        border: 1px solid #ffff;
+        @content;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -65,34 +93,82 @@ header {
             display: flex;
             align-items: center;
         }
+
+        .lang{
+            padding-right: 15px;
+
+            img{
+                padding-right: 10%;
+            }
+
+            span{
+                font-size: $msmall-text;
+                font-size: $regular;
+            }
+        }
+
+        .common_button {
+            @include customButton() {
+                color: $small-text-color;
+                width: 143px;
+                height: 57px;
+                padding: none;
+                font-size: $button-text;
+                border-radius: 9px;
+                border: 1px solid #000;
+                background: rgba(217, 217, 217, 0.00);
+
+                &:hover {
+                    color: #ffffff;
+                    background-color: $button-color;
+                    border: 1px solid #ffff;
+                }
+            }
+        }
     }
 
     .intro {
-        width: 1248px;
+        width: 93%;
         height: 550px;
         display: flex;
         align-items: center;
         align-self: center;
+        overflow-y: hidden;
         border-radius: 44px 44px 176px 44px;
         background: linear-gradient(315deg, #EE9AB3 0.25%, #5961F9 100%);
 
         .intro_content {
             display: flex;
             flex-direction: column;
-
+            margin-left: 2%;
+            z-index: 1;
             h1 {
+                width: 138%;
                 color: #ffff;
                 font-size: $xlarge-text;
             }
 
-            p{
+            p {
+                width: 74%;
                 color: #ffff;
                 font-size: $xsmall-text;
                 font-weight: $regular;
             }
+
+            .intro_button{
+                margin-top: 3%
+            }
+
+            .common_button {
+                @include customButton();
+            }
+
+            .intro_button_second {
+                margin-left: 5%;
+            }
         }
 
-        .intro_img{
+        .intro_img {
             height: 138%;
         }
     }
