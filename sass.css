@@ -253,20 +253,18 @@ header .intro .intro_img {
 }
 
 .notification-container {
-  width: 533px;
-  height: 95px;
-  border-radius: 19px;
+  border-radius: 10px;
   background: linear-gradient(90deg, #FAFAFA 0%, #FFFFFA 100%);
   box-shadow: 0px 4px 18px 1px rgba(236, 255, 117, 0.25);
-  padding: 19px 29px 18px 26px;
+  padding: 15px;
   position: fixed;
   bottom: 20px;
   right: 20px;
   color: #000;
   border: 1px solid #000;
-  font-size: 25px;
+  font-size: 1.3vw;
   font-weight: 500;
-  display: none;
+  display: block;
   animation: slideIn 0.5s ease-out;
   /* Add the sliding animation */
 }
@@ -274,9 +272,12 @@ header .intro .intro_img {
   display: flex;
   align-items: center;
 }
+.notification-container .flex img {
+  width: 30px;
+  height: 30px;
+}
 .notification-container .flex span {
   display: inline-block;
-  margin: auto;
 }
 
 @keyframes slideIn {
