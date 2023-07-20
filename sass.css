@@ -70,7 +70,7 @@ header nav .common_button {
   padding: 2% 0;
   font-size: 1.5vw;
   border-radius: 9px;
-  border: 1px solid #000;
+  border: 1px solid #060C55;
   background: rgba(217, 217, 217, 0);
   transition: background-color 0.3ms, border 0.3s;
   /* Styles for the button on hover */
@@ -89,7 +89,7 @@ header nav .common_button:hover {
   padding: 2% 0;
   font-size: 1.5vw;
   border-radius: 9px;
-  border: 1px solid #000;
+  border: 1px solid #060C55;
   background: rgba(217, 217, 217, 0);
 }
 header nav .common_button:hover:hover {
@@ -191,4 +191,99 @@ header .intro .intro_img {
   margin-left: 15%;
   font-size: 1.7vw;
   font-weight: 700;
+}
+
+.our_selves {
+  background: rgba(191, 136, 235, 0.05);
+}
+.our_selves .our_info {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our_selves .our_info .our_content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.our_selves .our_info h3 {
+  color: #060C55;
+  font-size: 4vw;
+  font-weight: 700;
+  line-height: 130%;
+}
+.our_selves .our_info h3 span {
+  color: #EF83FF;
+}
+.our_selves .our_info p {
+  font-size: 1.1vw;
+}
+.our_selves .our_info button {
+  /* Styles for the button */
+  width: 237px;
+  height: 71px;
+  padding: 14px 19px;
+  background-color: #EF83FF;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 9px;
+  display: inline-block;
+  font-size: 1.5vw;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3ms, border 0.3s;
+  /* Styles for the button on hover */
+}
+.our_selves .our_info button:hover {
+  color: #EF83FF;
+  background-color: transparent;
+  border: 1px solid #060C55;
+}
+.our_selves .our_info button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+}
+.our_selves .our_info button:hover:hover {
+  color: #EF83FF;
+  background-color: transparent;
+  border: 1px solid #060C55;
+}
+
+.notification-container {
+  width: 533px;
+  height: 95px;
+  border-radius: 19px;
+  background: linear-gradient(90deg, #FAFAFA 0%, #FFFFFA 100%);
+  box-shadow: 0px 4px 18px 1px rgba(236, 255, 117, 0.25);
+  padding: 19px 29px 18px 26px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #000;
+  border: 1px solid #000;
+  font-size: 25px;
+  font-weight: 500;
+  display: none;
+  animation: slideIn 0.5s ease-out;
+  /* Add the sliding animation */
+}
+.notification-container .flex {
+  display: flex;
+  align-items: center;
+}
+.notification-container .flex span {
+  display: inline-block;
+  margin: auto;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }/*# sourceMappingURL=sass.css.map */

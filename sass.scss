@@ -118,7 +118,7 @@ header {
                 padding: 2% 0;
                 font-size: $button-text;
                 border-radius: 9px;
-                border: 1px solid #000;
+                border: 1px solid $big-text-color;
                 background: rgba(217, 217, 217, 0.00);
 
                 &:hover {
@@ -226,5 +226,89 @@ header {
             font-weight: $bold;
         }
 
+    }
+}
+
+// admire section ends here.
+
+.our_selves {
+    background: rgba(191, 136, 235, 0.05);
+
+    .our_info {
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .our_content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        h3 {
+            color: $big-text-color;
+            font-size: $large-text;
+            font-weight: $bold;
+            line-height: 130%;
+
+            span {
+                color: $button-color;
+            }
+        }
+
+        p {
+            font-size: $xsmall-text;
+        }
+
+        button {
+            @include customButton() {
+                &:hover {
+                    color: $button-color;
+                    background-color: transparent;
+                    border: 1px solid $big-text-color;
+                }
+            }
+        }
+    }
+}
+
+
+.notification-container {
+    width: 533px;
+    height: 95px;
+    border-radius: 19px;
+    background: linear-gradient(90deg, #FAFAFA 0%, #FFFFFA 100%);
+    box-shadow: 0px 4px 18px 1px rgba(236, 255, 117, 0.25);
+    padding: 19px 29px 18px 26px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #000;
+    border: 1px solid #000;
+    font-size: 25px;
+    font-weight: 500;
+    display: none;
+    animation: slideIn 0.5s ease-out;
+    /* Add the sliding animation */
+
+    .flex {
+        display: flex;
+        align-items: center;
+
+        span {
+            display: inline-block;
+            margin: auto;
+        }
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
     }
 }
