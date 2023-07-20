@@ -103,7 +103,7 @@ header .intro {
   display: flex;
   align-items: center;
   align-self: center;
-  overflow-y: hidden;
+  overflow: hidden;
   border-radius: 44px 44px 176px 44px;
   background: linear-gradient(315deg, #EE9AB3 0.25%, #5961F9 100%);
 }
@@ -154,6 +154,7 @@ header .intro .intro_content .intro_button_second {
 }
 header .intro .intro_img {
   height: 138%;
+  transform: translateX(35px);
 }
 
 .admire {
