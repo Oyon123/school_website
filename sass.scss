@@ -35,7 +35,7 @@ $box-gradient: linear-gradient(315deg, #EE9AB3 0.25%, #5961F9 100%);
     text-align: center;
     text-decoration: none;
     border-radius: 9px;
-    display: inline-block;
+    // display: inline-block;
     font-size: $button-text;
     font-weight: $semibold;
     border: 1px solid transparent;
@@ -63,22 +63,6 @@ $box-gradient: linear-gradient(315deg, #EE9AB3 0.25%, #5961F9 100%);
     font-family: 'Jost', sans-serif;
 }
 
-ul {
-    display: flex;
-
-    li {
-        padding: 15%;
-        list-style-type: none;
-
-        a {
-            color: $big-text-color;
-            font-size: $msmall-text;
-            font-weight: $medium;
-            text-decoration: none;
-        }
-    }
-}
-
 header {
     display: flex;
     flex-direction: column;
@@ -89,6 +73,22 @@ header {
         padding: 0 5vw;
         justify-content: space-between;
         align-items: center;
+
+        ul {
+            display: flex;
+
+            li {
+                padding: 15%;
+                list-style-type: none;
+
+                a {
+                    color: $big-text-color;
+                    font-size: $msmall-text;
+                    font-weight: $medium;
+                    text-decoration: none;
+                }
+            }
+        }
 
         .logo_menu,
         .lang_button,
@@ -274,6 +274,104 @@ header {
     }
 }
 
+// ourselves section ends
+
+.price {
+    margin-top: 5%;
+    .price_header {
+        text-align: center;
+
+        h3 {
+            color: $big-text-color;
+            font-size: $medium-text;
+            font-weight: $bold;
+        }
+
+        p {
+            font-size: $xsmall-text;
+            font-weight: $regular;
+        }
+    }
+
+    .price_whole {
+        display: flex;
+        justify-content: space-evenly;
+        
+        .price_box {
+            width: 353px;
+            height: 731px;
+            margin-top: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            border-radius: 60px;
+            background: #FFF;
+            box-shadow: 0px 4px 50px 0px rgba(238, 154, 229, 0.25);
+
+            .price_content_header {
+                text-align: center;
+
+                h2 {
+                    color: $big-text-color;
+                    font-size: $medium-text;
+                }
+
+                p {
+                    font-size: $xsmall-text;
+                    font-weight: $regular;
+                }
+            }
+
+            p {
+                text-align: center;
+
+                span:first-child {
+                    color: $button-color;
+                    font-size: $xlarge-text;
+                    font-weight: $bold;
+                }
+            }
+
+            ul {
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    color: $small-text-color;
+                    font-size: $button-text;
+                    font-weight: $medium;
+                    text-align: left;
+                    margin-top: 10%;
+
+                    img {
+                        margin-right: 5%;
+                    }
+                }
+
+                li:last-child {
+                    align-items: flex-start;
+                }
+            }
+
+            button {
+                display: block;
+                margin: auto;
+                margin-top: 10%;
+
+                @include customButton() {
+                    &:hover {
+                        color: $button-color;
+                        background-color: transparent;
+                        border: 1px solid $big-text-color;
+                    }
+                }
+            }
+        }
+    }
+
+}
 
 .notification-container {
     // width: 533px;
@@ -298,10 +396,11 @@ header {
         display: flex;
         align-items: center;
 
-        img{
+        img {
             width: 30px;
             height: 30px;
         }
+
         span {
             display: inline-block;
             // margin-left: 1%;
@@ -318,3 +417,5 @@ header {
         transform: translateX(0);
     }
 }
+
+//notification

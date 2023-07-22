@@ -9,20 +9,6 @@
   font-family: "Jost", sans-serif;
 }
 
-ul {
-  display: flex;
-}
-ul li {
-  padding: 15%;
-  list-style-type: none;
-}
-ul li a {
-  color: #060C55;
-  font-size: 1.3vw;
-  font-weight: 500;
-  text-decoration: none;
-}
-
 header {
   display: flex;
   flex-direction: column;
@@ -32,6 +18,19 @@ header nav {
   padding: 0 5vw;
   justify-content: space-between;
   align-items: center;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  padding: 15%;
+  list-style-type: none;
+}
+header nav ul li a {
+  color: #060C55;
+  font-size: 1.3vw;
+  font-weight: 500;
+  text-decoration: none;
 }
 header nav .logo_menu,
 header nav .lang_button,
@@ -59,7 +58,6 @@ header nav .common_button {
   text-align: center;
   text-decoration: none;
   border-radius: 9px;
-  display: inline-block;
   font-size: 1.5vw;
   font-weight: 600;
   border: 1px solid transparent;
@@ -137,7 +135,6 @@ header .intro .intro_content .common_button {
   text-align: center;
   text-decoration: none;
   border-radius: 9px;
-  display: inline-block;
   font-size: 1.5vw;
   font-weight: 600;
   border: 1px solid transparent;
@@ -230,7 +227,6 @@ header .intro .intro_img {
   text-align: center;
   text-decoration: none;
   border-radius: 9px;
-  display: inline-block;
   font-size: 1.5vw;
   font-weight: 600;
   border: 1px solid transparent;
@@ -248,6 +244,106 @@ header .intro .intro_img {
   border: 1px solid white;
 }
 .our_selves .our_info button:hover:hover {
+  color: #EF83FF;
+  background-color: transparent;
+  border: 1px solid #060C55;
+}
+
+.price {
+  margin-top: 5%;
+}
+.price .price_header {
+  text-align: center;
+}
+.price .price_header h3 {
+  color: #060C55;
+  font-size: 3.3vw;
+  font-weight: 700;
+}
+.price .price_header p {
+  font-size: 1.1vw;
+  font-weight: 400;
+}
+.price .price_whole {
+  display: flex;
+  justify-content: space-evenly;
+}
+.price .price_whole .price_box {
+  width: 353px;
+  height: 731px;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 60px;
+  background: #FFF;
+  box-shadow: 0px 4px 50px 0px rgba(238, 154, 229, 0.25);
+}
+.price .price_whole .price_box .price_content_header {
+  text-align: center;
+}
+.price .price_whole .price_box .price_content_header h2 {
+  color: #060C55;
+  font-size: 3.3vw;
+}
+.price .price_whole .price_box .price_content_header p {
+  font-size: 1.1vw;
+  font-weight: 400;
+}
+.price .price_whole .price_box p {
+  text-align: center;
+}
+.price .price_whole .price_box p span:first-child {
+  color: #EF83FF;
+  font-size: 5.1vw;
+  font-weight: 700;
+}
+.price .price_whole .price_box ul li {
+  display: flex;
+  align-items: center;
+  color: #4A4C6D;
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 10%;
+}
+.price .price_whole .price_box ul li img {
+  margin-right: 5%;
+}
+.price .price_whole .price_box ul li:last-child {
+  align-items: flex-start;
+}
+.price .price_whole .price_box button {
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+  /* Styles for the button */
+  width: 237px;
+  height: 71px;
+  padding: 14px 19px;
+  background-color: #EF83FF;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 9px;
+  font-size: 1.5vw;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3ms, border 0.3s;
+  /* Styles for the button on hover */
+}
+.price .price_whole .price_box button:hover {
+  color: #EF83FF;
+  background-color: transparent;
+  border: 1px solid #060C55;
+}
+.price .price_whole .price_box button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+}
+.price .price_whole .price_box button:hover:hover {
   color: #EF83FF;
   background-color: transparent;
   border: 1px solid #060C55;
