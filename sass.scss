@@ -278,6 +278,7 @@ header {
 
 .price {
     margin-top: 5%;
+
     .price_header {
         text-align: center;
 
@@ -296,7 +297,7 @@ header {
     .price_whole {
         display: flex;
         justify-content: space-evenly;
-        
+
         .price_box {
             width: 353px;
             height: 731px;
@@ -373,13 +374,54 @@ header {
 
 }
 
+// price section ends
+
+.online {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+
+    .online_box {
+        width: 90%;
+        height: 393px;
+        border-radius: 53px;
+        background: linear-gradient(315deg, #EE9AE5 0.25%, #5961F9 100%), #D9D9D9;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .online_content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            h2 {
+                color: #FFF;
+                font-size: $medium-text;
+                font-weight: $bold;
+                line-height: 130%;
+            }
+
+            p {
+                color: #FFF;
+                font-size: $xsmall-text;
+            }
+        }
+
+        button {
+            @include customButton();
+        }
+
+
+    }
+}
+
+
 .notification-container {
-    // width: 533px;
-    // height: 95px;
     border-radius: 10px;
     background: linear-gradient(90deg, #FAFAFA 0%, #FFFFFA 100%);
     box-shadow: 0px 4px 18px 1px rgba(236, 255, 117, 0.25);
-    // padding: 19px 29px 18px 26px;
     padding: 15px;
     position: fixed;
     bottom: 20px;

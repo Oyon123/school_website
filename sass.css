@@ -349,6 +349,58 @@ header .intro .intro_img {
   border: 1px solid #060C55;
 }
 
+.online {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.online .online_box {
+  width: 90%;
+  height: 393px;
+  border-radius: 53px;
+  background: linear-gradient(315deg, #EE9AE5 0.25%, #5961F9 100%), #D9D9D9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.online .online_box .online_content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.online .online_box .online_content h2 {
+  color: #FFF;
+  font-size: 3.3vw;
+  font-weight: 700;
+  line-height: 130%;
+}
+.online .online_box .online_content p {
+  color: #FFF;
+  font-size: 1.1vw;
+}
+.online .online_box button {
+  /* Styles for the button */
+  width: 237px;
+  height: 71px;
+  padding: 14px 19px;
+  background-color: #EF83FF;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 9px;
+  font-size: 1.5vw;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3ms, border 0.3s;
+  /* Styles for the button on hover */
+}
+.online .online_box button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
 .notification-container {
   border-radius: 10px;
   background: linear-gradient(90deg, #FAFAFA 0%, #FFFFFA 100%);
