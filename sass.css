@@ -50,8 +50,8 @@ header nav .lang span {
 }
 header nav .common_button {
   /* Styles for the button */
-  width: 237px;
-  height: 71px;
+  width: 17.4vw;
+  height: 10.8066971081vh;
   padding: 14px 19px;
   background-color: #EF83FF;
   color: white;
@@ -63,8 +63,8 @@ header nav .common_button {
   border: 1px solid transparent;
   cursor: pointer;
   color: #4A4C6D;
-  width: 143px;
-  height: 57px;
+  width: 10.5vw;
+  height: 8.7vh;
   padding: 2% 0;
   font-size: 1.5vw;
   border-radius: 9px;
@@ -82,8 +82,8 @@ header nav .common_button:hover {
   background-color: transparent;
   border: 1px solid white;
   color: #4A4C6D;
-  width: 143px;
-  height: 57px;
+  width: 10.5vw;
+  height: 8.7vh;
   padding: 2% 0;
   font-size: 1.5vw;
   border-radius: 9px;
@@ -96,8 +96,8 @@ header nav .common_button:hover:hover {
   border: 1px solid white;
 }
 header .intro {
-  width: 93%;
-  height: 550px;
+  width: 91.7vw;
+  height: 83.7138508371vh;
   display: flex;
   align-items: center;
   align-self: center;
@@ -112,12 +112,12 @@ header .intro .intro_content {
   z-index: 1;
 }
 header .intro .intro_content h1 {
-  width: 138%;
+  width: 50vw;
   color: white;
   font-size: 5.1vw;
 }
 header .intro .intro_content p {
-  width: 74%;
+  width: 32vw;
   color: white;
   font-size: 1.1vw;
   font-weight: 400;
@@ -127,8 +127,8 @@ header .intro .intro_content .intro_button {
 }
 header .intro .intro_content .common_button {
   /* Styles for the button */
-  width: 237px;
-  height: 71px;
+  width: 17.4vw;
+  height: 10.8066971081vh;
   padding: 14px 19px;
   background-color: #EF83FF;
   color: white;
@@ -150,8 +150,11 @@ header .intro .intro_content .intro_button_second {
   margin-left: 5%;
 }
 header .intro .intro_img {
-  height: 138%;
-  transform: translateX(35px);
+  height: 100vh;
+  width: 47.6vw;
+}
+header .intro .intro_img img {
+  width: 100%;
 }
 
 .admire {
@@ -173,8 +176,8 @@ header .intro .intro_img {
   margin-top: auto;
 }
 .admire .admire_box {
-  width: 272px;
-  height: 417px;
+  width: 20vw;
+  height: 63.4703196347vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -182,6 +185,24 @@ header .intro .intro_img {
   border-radius: 60px;
   background: #FFF;
   box-shadow: 0px 10px 50px 0px rgba(238, 154, 229, 0.25);
+}
+.admire .admire_box .one {
+  width: 11vw;
+}
+.admire .admire_box .one img {
+  width: 100%;
+}
+.admire .admire_box .two {
+  width: 17.3vw;
+}
+.admire .admire_box .two img {
+  width: 100%;
+}
+.admire .admire_box .three {
+  width: 16.3vw;
+}
+.admire .admire_box .three img {
+  width: 100%;
 }
 .admire .admire_box h4 {
   color: #060C55;
@@ -219,8 +240,8 @@ header .intro .intro_img {
 }
 .our_selves .our_info button {
   /* Styles for the button */
-  width: 237px;
-  height: 71px;
+  width: 17.4vw;
+  height: 10.8066971081vh;
   padding: 14px 19px;
   background-color: #EF83FF;
   color: white;
@@ -319,8 +340,8 @@ header .intro .intro_img {
   margin: auto;
   margin-top: 10%;
   /* Styles for the button */
-  width: 237px;
-  height: 71px;
+  width: 17.4vw;
+  height: 10.8066971081vh;
   padding: 14px 19px;
   background-color: #EF83FF;
   color: white;
@@ -381,8 +402,8 @@ header .intro .intro_img {
 }
 .online .online_box button {
   /* Styles for the button */
-  width: 237px;
-  height: 71px;
+  width: 17.4vw;
+  height: 10.8066971081vh;
   padding: 14px 19px;
   background-color: #EF83FF;
   color: white;
