@@ -439,12 +439,14 @@ header .intro .intro_img img {
 }
 
 .footer {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
   background-color: #060C55;
 }
 .footer .footer_box {
   color: #fff;
   font-size: 1.1vw;
-  margin-top: 15%;
   padding: 5%;
   display: flex;
   justify-content: space-around;
@@ -474,7 +476,7 @@ header .intro .intro_img img {
 .footer .footer_box .footer_content #myInput::-webkit-input-placeholder {
   color: #4A4C6D;
 }
-.footer .footer_box .footer_content #myButton {
+.footer .footer_box .footer_content #notification-button {
   /* Styles for the button */
   width: 17.4vw;
   height: 10.8066971081vh;
@@ -496,7 +498,7 @@ header .intro .intro_img img {
   transition: background-color 0.3ms, border 0.3s;
   /* Styles for the button on hover */
 }
-.footer .footer_box .footer_content #myButton:hover {
+.footer .footer_box .footer_content #notification-button:hover {
   background-color: transparent;
   border: 1px solid white;
   width: 13.6029411765vw;
@@ -522,9 +524,11 @@ header .intro .intro_img img {
   margin: auto;
 }
 .footer .ending {
+  width: 86%;
+  margin: auto;
   padding: 2% 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 60vw;
 }
@@ -533,9 +537,6 @@ header .intro .intro_img img {
   justify-content: center;
   color: rgba(255, 255, 255, 0.5);
   font-size: 11px;
-}
-.footer .ending .credit img {
-  width: 1.1vw;
 }
 .footer .ending .social_links {
   display: flex;

@@ -468,12 +468,14 @@ header {
 
 .footer {
     // height: 60.6vh;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
     background-color: $big-text-color;
 
     .footer_box {
         color: #fff;
         font-size: $xsmall-text;
-        margin-top: 15%;
         padding: 5%;
         display: flex;
         justify-content: space-around;
@@ -506,7 +508,7 @@ header {
                 }
             }
 
-            #myButton {
+            #notification-button {
 
                 @include customButton() {
                     width: 13.602941176470589vw;
@@ -535,33 +537,40 @@ header {
         }
     }
 
-    hr{
+    hr {
         width: 85.2vw;
         margin: auto;
     }
+
     .ending {
+        width: 86%;
+        margin: auto;
         padding: 2% 0;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         gap: 60vw;
 
-        .credit{
+        .credit {
             display: flex;
             justify-content: center;
             color: rgba(255, 255, 255, 0.50);
             font-size: 11px;
 
-            img{
-                width: 1.1vw;
-            }
+            // .credit_img {
+            //     width: 1.1vw;
+
+            //     img {
+            //         width: 100%;
+            //     }
+            // }
         }
 
-        .social_links{
+        .social_links {
             display: flex;
             justify-content: center;
 
-            img{
+            img {
                 width: 1.6vw;
                 padding: 0 2%;
             }
